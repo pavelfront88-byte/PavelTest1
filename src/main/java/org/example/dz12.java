@@ -7,4 +7,5 @@ public class dz12 {
         {
             if (array[i] < 6) {
                 array[i] = array[i] * 2;
-            }}
+            }
+        }
