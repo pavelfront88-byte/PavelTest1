@@ -4,7 +4,7 @@ public class Circle
     private double radius;
     public Circle(double radius)
     {
-        if (radius<=0)
+        if (radius<=10)
         {
             throw new IllegalArgumentException("Радиус+");
         }
