@@ -1,7 +1,7 @@
 package org.example;
 class Cat extends Animal
 {
-    private static int catCount = 0;
+    private static int catCount=0;
     private boolean isFull;
     public Cat(String name)
     {
@@ -12,7 +12,7 @@ class Cat extends Animal
     @Override
     public void run(int distance)
     {
-        if (distance <= 200)
+        if (distance<=200)
         {
             System.out.println(name+distance);
         } else

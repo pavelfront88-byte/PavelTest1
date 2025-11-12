@@ -1,7 +1,7 @@
 package org.example;
 abstract class Animal
 {
-    protected static int animalCount = 0;
+    protected static int animalCount=0;
     protected String name;
     public Animal(String name)
     {
