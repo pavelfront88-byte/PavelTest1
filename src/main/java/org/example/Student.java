@@ -17,18 +17,20 @@ public class Student
         this.grades = grades;
     }
 
-    public int[] getGrades() {
+    public int[] getGrades()
+    {
         return grades;
     }
     public static boolean CheckGrades(int[] grades)
     {
-        float average_mark = ((Arrays.stream(grades).sum()) / (float)grades.length);
+        float average_mark = ((Arrays.stream(grades).sum())/ (float)grades.length);
         return average_mark >= 3;
     }
-    public static void deleteStudents(ArrayList<Student> students){
+    public static void deleteStudents(ArrayList<Student>students)
+    {
         int lengthOfStudents = students.size();
         int i = 0;
-        while (i < lengthOfStudents){
+        while (i<lengthOfStudents){
             if (!Student.CheckGrades(students.get(i).grades))
             {
                 students.remove(i);
@@ -38,13 +40,16 @@ public class Student
             else i++;
         }}
 
-    public static void printStudents(ArrayList<Student> students, int course){
-        for (Student student : students) {
-            if (student.course == course) {
+    public static void printStudents(ArrayList<Student>students,int course){
+        for (Student student:students)
+        {
+            if (student.course==course)
+            {
                 System.out.println(student.name);
             }}}
 
-    public static void print(ArrayList<Student> students){
+    public static void print(ArrayList<Student>students)
+    {
         for (Student student : students)
         {
             System.out.print(student.name+ " " + student.course + " ");
