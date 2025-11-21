@@ -15,4 +15,11 @@ public class TriangleTest
         double area = Triangle.calculateArea(2, 2, 2);
         double expected = Math.sqrt(3);
         Assert.assertEquals(area, expected, 1e-10);
-    }}
+    }
+
+    private static class Triangle {
+        public static double calculateArea(int i, int i1, int i2) {
+            return 0;
+        }
+    }
+}
