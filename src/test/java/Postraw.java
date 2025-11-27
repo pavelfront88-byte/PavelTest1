@@ -4,13 +4,13 @@ import static org.hamcrest.Matchers.is;
 public class Postraw {
     @Test
     public void postRawText() {
-        Object TEST_DATASTRING = null;
+        Object postraw = null;
         given()
                 // .log().all()
-                .body(TEST_DATASTRING)
+                .body(postraw)
                 .when().post("/post")
                 .then()
                 // .log().all()
                 .assertThat().statusCode(200)
-                .and().body("data", is(TEST_DATASTRING));
+                .and().body("data", is(postraw));
     }}
