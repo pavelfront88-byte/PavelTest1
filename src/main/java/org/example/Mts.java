@@ -4,7 +4,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Mts {
     public WebDriver driver;
-
     public Mts(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
