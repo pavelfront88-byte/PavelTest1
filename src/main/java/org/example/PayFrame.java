@@ -74,4 +74,16 @@ public class PayFrame {
     public String getCardHolderPlaceholder() throws NoSuchElementException {
         return cardHolderPlaceholder.getText();
     }
+
+    public String getPayFrameDescriptionCost() {
+        return "";
+    }
+
+    public String getPayFrameBtnText() {
+        return "";
+    }
+
+    public String getPayFrameDescriptionPhone() {
+        return "";
+    }
 }
