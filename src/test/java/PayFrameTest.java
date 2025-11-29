@@ -30,6 +30,7 @@ public class PayFrameTest {
     static void after() {
         driver.quit();
     }
+
     @Test
     void descriptionCost() {
         String name = "Текст описания суммы";
