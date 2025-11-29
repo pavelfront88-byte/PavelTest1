@@ -18,7 +18,7 @@ public class PayFrameTest {
     public static final String TEST_SUM = "77.77";
 
     @BeforeAll
-    static void before() {
+      static void before() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -27,7 +27,7 @@ public class PayFrameTest {
 
     }
     @AfterAll
-    static void after() {
+     static void after() {
         driver.quit();
     }
 
